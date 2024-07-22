@@ -36,10 +36,10 @@ net_g = SynthesizerTrn(
     **hps.model).cuda()
 _ = net_g.eval()
 
-_ = utils.load_checkpoint("./logs/french_ms_01/G_191000.pth", net_g, None)
+_ = utils.load_checkpoint("./logs/french_ms_01/G_191000.pth", net_g, None) # replace with checkpoint path
 
-output_folder = './gen_audios/fr_wa_ms_400K/fabs_male/'
-speaker_id = 0
+output_folder = './gen_audios/fr_wa_ms_400K/fabs_male/' # replace with output folder
+speaker_id = 0 # replace with speaker id
 
 stn_tst = get_text("Li bijhe et l’ solea estént ki s’ margayént po sawè kî çki, des deus, esteut l’ pus foirt. Mins ç’ côp la, la k’ i veyèt on tchminåd k' arivéve pyim piam, dins on bea noû tchôd paltot. Ladsu, i s' metèt d' acoird po çci: li ci ki parvénreut l' prumî a lyi haper s' mantea, ça sreut lu ki sreut rwaitî come li pus foirt. Adon, la k' li bijhe si mete a shofler tant k' ele pout. Mins non pus, pus çk' ele shofléve, pus çki l' roteu s' racafûléve dins s' grand paltot. Ça fwait k' elle a laixhî ouve. A ç' moumint la, la ki l' solea s' mete a lure come cwand i lût des cwate costés. Et c' est ki: après ene hapêye, la ki l' pormoenneu a stî reschandi, et il a tiré s' mantea. Ça fwait k' li bijhe a bén dvou rconoxhe ki l' solea esteut l' pus foirt di zels deus.", hps)
 with torch.no_grad():

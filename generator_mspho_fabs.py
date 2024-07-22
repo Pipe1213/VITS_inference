@@ -36,10 +36,10 @@ net_g = SynthesizerTrn(
     **hps.model).cuda()
 _ = net_g.eval()
 
-_ = utils.load_checkpoint("./logs/french_mspho_01/G_121000.pth", net_g, None)
+_ = utils.load_checkpoint("./logs/french_mspho_01/G_121000.pth", net_g, None) # replace the path with the path to the model you want to use
 
-output_folder = './gen_audios/fr_wa_finetuned/80k/fab_female/'
-speaker_id = 1
+output_folder = './gen_audios/fr_wa_finetuned/80k/fab_female/' # replace with the path to the folder where you want to save the generated audio files
+speaker_id = 1 # replace with the speaker id of the speaker you want to use
 
 stn_tst = get_text(" li biːç ɛ l sɔlja s batẽ , tsɛkõk asyʁɔ k il ɛstɔ l py fwaʁ , kwɑ̃ il õ vøː õ vɔjɛdzøː ki s avɑ̃sɔ , abijiː avu õ paltɔ . i s õ mɛtu d akwaʁ pɔ vɛj kiː aʁivʁɔ l pʁymiː a fwɛːʁ ʁitiʁe l paltɔ ɔː vɔjɛdzøː , s  ɛ si la ki sʁɛ ʁwɛːtiː kɔm li py fwaʁ . tɔ d õ koː , li biːç s a mɛtu a ʃɔfle di tɔt sɛ fwas . m ɛ̃ py k ɛl ʃɔflɔ , py ki l vɔjɛdzøː sɛʁɔ s paltɔ tɔt ɔːtuː d ly . ɛ al fẽ , li biːç a aʁɛte di sajiː di lji fwɛːʁ ʁitiʁe s paltɔ . aloːʁ , li sɔlja a km ɛ̃siː a ʁlyːʁ , ɛ ɔː dbu d õ mum ɛ̃ , li vɔjɛdzøː , tɔ ʁʃɑ̃di , a ʁtiʁe s paltɔ . sa fwɛː ki l biːç a b ɛ̃ dvy ʁkɔny ki l sɔlja ɛstɔ l py fwaʁ dɛ døː . ", hps)
 with torch.no_grad():
