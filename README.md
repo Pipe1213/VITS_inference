@@ -6,6 +6,7 @@ Clone the original repository: https://github.com/jaywalnut310/vits
 
 ``git clone https://github.com/jaywalnut310/vits``
 
+python version = 3.6
 Then install all the dependencies from the requirements.txt file (some of then are available using conda install but other only using pip install so i recommend to install them one by one)
 
 Additionally, it is recommended to install the appropriate driver for the cuda version of the system, which can be found at the following link: https://pytorch.org/get-started/locally/
