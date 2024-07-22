@@ -16,6 +16,8 @@ Some pre-trained models are available at the following link:
 
 https://drive.google.com/drive/folders/1Vig65ItCC3nmIDJ0FCKdk6Tof7DI44LN?usp=sharing
 
+Each model has its own file containing the symbols used (symbols.py), this file must be located in the 'text' folder and must be adapted depending on each model.
+
 ## 3. Inference
 
 Use the inference scripts provided on this repo to generated new audios, only replace the folder path with yours and the desire text to generated and speaker id.
