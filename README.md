@@ -10,6 +10,14 @@ Create a new enviroment with a python version = 3.6, then install all the depend
 
 Additionally, it is recommended to install the appropriate driver for the cuda version of the system, which can be found at the following link: https://pytorch.org/get-started/locally/
 
+Build Monotonic Alignment Search and run preprocessing if you use your own datasets.
+```sh
+# Cython-version Monotonoic Alignment Search
+cd monotonic_align
+python setup.py build_ext --inplace
+
+```
+
 ## 2. Download pretrained models
 
 Some pre-trained models are available at the following link:
