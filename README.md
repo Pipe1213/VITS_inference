@@ -21,3 +21,7 @@ https://drive.google.com/drive/folders/1Vig65ItCC3nmIDJ0FCKdk6Tof7DI44LN?usp=sha
 Use the inference scripts provided on this repo to generated new audios, only replace the folder path with yours and the desire text to generated and speaker id.
 For the pretrained models provided in this repo '0' correspond to the male voice and '1' to the female.
 
+Inference based on phonemes: https://github.com/Pipe1213/VITS_inference/blob/main/generator_mspho_fabs.py 
+
+Inference based on graphemes: https://github.com/Pipe1213/VITS_inference/blob/main/generator_ms_fabs.py
+
